@@ -1,0 +1,41 @@
+<!--
+ * Title: Assignment 4.4 - Async Pipe;
+ * Author: Professor Krasso
+ * Date: 1/24/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates an understanding of Asynchronous Pipes and Observable Arrays;
+-->
+
+<!-- Here we display a table of composers. -->
+<div class="row">
+  <div class="col-sm-12">
+    <!-- This div and input provide a reactive form on the front end. -->
+    <div class="textSearch">
+      <input type="text" id="textSearch" class="form-control" placeholder="Search by name" [formControl]="textSearchControl" />
+    </div>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <!-- Another header has been added for the Composer ID -->
+          <th scope="col">Composer ID</th>
+          <th scope="col">Full Name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+      <!-- Here we use an ngFor loop to fill in the table with full name and genre information. -->
+      <tbody *ngFor="let composer of composers | async">
+        <tr>
+          <!-- The fullName and genre attributes are gotten by extension through dot notation here. -->
+          <td scope="row">
+            <!-- Here we provide the composer ID as a router link -->
+            <a routerLink="/composer-details/{{ composer.composerId }}">
+              {{ composer.composerId }}
+            </a>
+          </td>
+          <td scope="row">{{ composer.fullName }}</td>
+          <td>{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

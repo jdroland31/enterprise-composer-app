@@ -1,0 +1,34 @@
+<!--
+ * Title: Assignment 4.4 - Async Pipe;
+ * Author: Professor Krasso
+ * Date: 1/24/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates an understanding of Asynchronous Pipes and Observable Arrays;
+-->
+
+<!-- display a nav bar that uses routerLink to offer navigation via Router -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2>Exercise 4.4 - Async Pipe</h2>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- display the correct html code based on navigation and router with this router-outlet element -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

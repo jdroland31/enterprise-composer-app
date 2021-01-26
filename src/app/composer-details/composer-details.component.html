@@ -1,0 +1,22 @@
+<!--
+ * Title: Assignment 4.4 - Async Pipe;
+ * Author: Professor Krasso
+ * Date: 1/24/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates an understanding of Asynchronous Pipes and Observable Arrays;
+-->
+
+
+<!-- This small display is used to show the details of a specifically requested composer. -->
+
+<div class="row">
+  <div class=col-sm-12>
+    <ul class="list-group">
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item">Full Name: {{ composer.fullName }}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br>
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>

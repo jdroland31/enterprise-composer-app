@@ -1,0 +1,16 @@
+/*
+ * Title: Assignment 4.4 - Async Pipe;
+ * Author: Professor Krasso
+ * Date: 1/24/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates an understanding of Asynchronous Pipes and Observable Arrays;
+*/
+
+/* This file acts the style sheet for the composer list component */
+
+/* The textSearch form is styled so that it fits in nicely with the composers list.*/
+.textSearch{
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}
